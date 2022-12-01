@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+
+	<title>Kristali Silmarilion Pretraga</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Pretrazite kristale u nasoj ponudi ovde. Kristali Silmarilion.">
+	<meta name="keywords" content="pregled kristala, prodaja, ponuda kristala, porucivanje, pretraga dragog kamenja, nakit, figure, ogrlice, narukvice, prstenje, mindjuse">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="icon" href="silma/slike/favicon-32x32.png">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="jquery-3.6.0.js"></script>
+	<link rel="stylesheet" href="search.css">
+
+</head>
+
+<body>
+
+	<div class="search_bar">
+		<button class="back_button" onclick="history.back()">Nazad</button>
+		<input type="text" placeholder="Pretraži.." name="search" id="search_id" class="search_input">
+		<button type="submit" id="search_button"><i class="fa fa-search" onclick="search()"></i></button>
+	</div>
+	<!-- ovde stavi rezultat search() -->
+	<h4 class="rezultat_metode" id="rez_met"></h3>
+
+		<div class="display_res" id="display_r">
+		</div>
+
+		<div id="zoom_div">
+			<div class="inner_zoom">
+				<span class="closeZ" onclick="closeZoom()">&times;</span>
+				<img class="zoom_img" id="zoom" src="images2/nakit/ogrlice/01gorskikristal1.jpg">
+			</div>
+		</div>
+
+		<script src="searchScript.js"></script>
+
+	</body>
+
+	</html>
